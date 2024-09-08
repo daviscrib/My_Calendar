@@ -30,9 +30,6 @@
   }
 }
 .vanilla-calendar .vanilla-calendar-btn {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-appearance: button;
   background: none;
   border: 0;
   color: inherit;
