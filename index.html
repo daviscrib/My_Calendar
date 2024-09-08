@@ -17,7 +17,14 @@
       <form>
         <div class="">
           <label for="task">Tâche à réaliser</label>
-          <input type="text" id="task" placeholder="Nom de la tâche" />
+          <input
+            type="text"
+            id="task"
+            placeholder="Nom de la tâche"
+            required
+            minlength="3"
+            maxlength="250"
+          />
         </div>
         <div>
           <label for="level">Priorité</label>
