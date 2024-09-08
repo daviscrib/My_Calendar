@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./libs/calendar/vanilla-calendar.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./libs/calendar/vanilla-calendar.js"></script>
     <script src="./index.js" defer></script>
     <title>Mon Calendrier</title>
   </head>
   <body>
+    <h1>Calendrier des tâches</h1>
     <div id="myCalendar" class="vanilla-calendar"></div>
+    <h2>Tâches planifiées</h2>
+    <div class="center">
+      <form>
+        <div class="">
+          <label for="task">Tâche à réaliser</label>
+          <input type="text" id="task" placeholder="Nom de la tâche" />
+        </div>
+        <div>
+          <label for="level">Priorité</label>
+          <select type="text" id="level" placeholder="Niveau de priorité">
+            <option>Basse</option>
+            <option>Moyenne</option>
+            <option>Haute</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Ajouter la tâche</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

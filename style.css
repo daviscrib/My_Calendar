@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-weight: 800;
+}
+
+form select {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5em;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5em;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background-color: rgb(175, 230, 171);
+  margin: 20px 0 20px 0;
+}
