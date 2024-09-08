@@ -1,11 +1,11 @@
 :root {
-  --vanilla-calendar-bg-color: #fff;
+  --vanilla-calendar-bg-color: #ffffff;
   --vanilla-calendar-border-radius: 5px;
-  --vanilla-calendar-border-color: #e7e9ed;
-  --vanilla-calendar-today-bg-color: #e7e9ed;
+  --vanilla-calendar-border-color: #e7ede8;
+  --vanilla-calendar-today-bg-color: #d4d4d4;
   --vanilla-calendar-today-color: #333;
-  --vanilla-calendar-selected-bg-color: #538fcd;
-  --vanilla-calendar-selected-color: #fff;
+  --vanilla-calendar-selected-bg-color: #74cba0;
+  --vanilla-calendar-selected-color: #ffffff;
   --vanilla-calendar-selected-radius: 5px;
 }
 
