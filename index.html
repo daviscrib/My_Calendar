@@ -10,16 +10,17 @@
     <title>Mon Calendrier</title>
   </head>
   <body>
-    <h1>Calendrier des tâches</h1>
+    <h1>Calendrier</h1>
     <div id="myCalendar" class="vanilla-calendar"></div>
     <h2>Tâches planifiées</h2>
     <div class="center">
-      <form>
+      <form id="task-form">
         <div class="">
           <label for="task">Tâche à réaliser</label>
           <input
             type="text"
             id="task"
+            name="task"
             placeholder="Nom de la tâche"
             required
             minlength="3"
@@ -28,10 +29,15 @@
         </div>
         <div>
           <label for="level">Priorité</label>
-          <select type="text" id="level" placeholder="Niveau de priorité">
-            <option>Basse</option>
-            <option>Moyenne</option>
-            <option>Haute</option>
+          <select
+            type="text"
+            id="level"
+            name="level"
+            placeholder="Niveau de priorité"
+          >
+            <option class="down">Basse</option>
+            <option class="middle">Moyenne</option>
+            <option class="high">Haute</option>
           </select>
         </div>
         <div>
