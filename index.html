@@ -12,16 +12,28 @@
   <body>
     <h1>Calendrier</h1>
     <div id="myCalendar" class="vanilla-calendar"></div>
-    <h2>Tâches planifiées</h2>
+    <h2>Tâches à réaliser</h2>
     <div class="center">
       <form id="task-form">
-        <div class="">
-          <label for="task">Tâche à réaliser</label>
+        <div>
+          <label for="title">Titre</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Nom de la tâche"
+            required
+            minlength="3"
+            maxlength="50"
+          />
+        </div>
+        <div>
+          <label for="task">Description</label>
           <input
             type="text"
             id="task"
             name="task"
-            placeholder="Nom de la tâche"
+            placeholder="Descriptif de la tâche"
             required
             minlength="3"
             maxlength="250"

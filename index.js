@@ -29,7 +29,16 @@ taskForm.addEventListener("submit", addTask);
 function addTask(e) {
   e.preventDefault();
   const formData = new FormData(taskForm);
+  const title = formData.get("title");
   const task = formData.get("task");
   const level = formData.get("level");
-  console.log("task", { task, level, selectedDate: selectedDate });
+  const newTask = { title, task, level, selectedDate: selectedDate };
+  console.log("newTask", newTask);
+  savePlanning(newTask);
+}
+
+function savePlanning(task) {
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks = [...tasks, task];
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 }
